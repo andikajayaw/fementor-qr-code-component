@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #d6e2f0;
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card-content {
+  padding: 5px;
+}
+
+.card-content .content-title p {
+    font-size: 20px;
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card-content .content-text p {
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+@media (max-width: 375px) {
+  /* CSS rules for screens 375px wide or less (common mobile size) */
+  .card {
+    width: 90%;
+    padding: 10px;
+  }
+  .card img {
+    max-width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
