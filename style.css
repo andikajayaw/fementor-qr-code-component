@@ -18,21 +18,12 @@ body {
     height: 100vh;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .card img {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    border-radius: 0.9375em;
+    margin-bottom: 1.25em;
 }
 
 .card-content {
@@ -40,27 +31,39 @@ body {
 }
 
 .card-content .content-title p {
-    font-size: 20px;
+    font-size: 1.25em;
     color: hsl(218, 44%, 22%);
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 
 .card-content .content-text p {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: hsl(220, 15%, 55%);
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     font-weight: 400;
 }
 
-@media (max-width: 375px) {
-  /* CSS rules for screens 375px wide or less (common mobile size) */
+.card {
+  width: 90%;
+  padding: 0.625em;
+  background-color: #fff;
+  border-radius: 1.25em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.25em;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 1.875em;
+}
+
+@media (min-width: 23.4375em) {
   .card {
-    width: 90%;
-    padding: 10px;
+    width: 300px;
+    padding: 1.25em;
   }
   .card img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
